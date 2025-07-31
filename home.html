@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <main class="">
+        <div class="flex justify-center">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-3">
+
+                        <!-- show amount start -->
+                        <div class="mb-8">
+                            <div class="stats shadow">
+                                <div class="stat">
+                                    <div id="Available-Blance" class="stat-value">2100</div>
+                                    <div class="stat-desc">Available Blance</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- show amount end -->
+
+
+                        <!-- add money button and cash out button  start-->
+                        <div class="mb-6">
+                            <button id="btnAddMoney" class="btn">Add Money</button>
+                            <button id="btnCashOut" class="btn">Cash Out</button>
+                        </div>
+                        <!-- add money button and cash out button  end-->
+
+
+
+                        <!-- add money section start-->
+                        <div id="add-money-section" >
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="addMoney-input-Amount" type="text" placeholder="Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Password</span>
+                                        </label>
+                                        <input id="addMoney-input-pass" type="password" placeholder="password"
+                                            autocomplete="off" class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- add money section end-->
+
+                        <!-- Cash Out section start-->
+                        <div id="cash-out-section" class="hidden">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="cashOut-input-Amount" type="text" placeholder="Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Password</span>
+                                        </label>
+                                        <input id="cashOut-input-pass" type="password" placeholder="password"
+                                            autocomplete="off" class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Cash Out section end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js file/utilities.js"></script>
+    <script src="js file/addmoney2.js"></script>
+    <script src="js file/cashout2.js"></script>
+
+    <!-- 1st js file manualy -->
+    <!-- <script src="js file/addmoney.js"></script>
+    <script src="js file/cashOut.js"></script> -->
+    <script src="js file/fetures.js"></script>
+</body>
+
+</html>
