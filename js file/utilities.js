@@ -9,3 +9,11 @@ function getTextvalueid(id) {
     const textNumberValue = parseFloat(textValue);
     return textNumberValue;
 }
+
+function showSectionId(id){
+    document.getElementById('add-money-section').classList.add('hidden');
+    document.getElementById('cash-out-section').classList.add('hidden');
+    document.getElementById('Transaction-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
